@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic/Manga Archive</title>
+    <link rel="stylesheet" href="project_miaraz.css">
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Comic/Manga Archive!</h1>
+        <p>Your ultimate destination for Manga, Graphic Novels, and Western Comics.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="stats-bar">
+            <div class="stat-item">Total Comics: <span id="comic-count">0</span></div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by title...">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+
+        <div class="categories">
+
+            <div class="card manga">
+                <h3>Manga</h3>
+                <p>Japanese style comic books and graphic novels.</p>
+                <ul class="item-list" id="manga-list">
+                </ul>
+            </div>
+
+            <div class="card graphic-novel">
+                <h3>Graphic Novels</h3>
+                <p>Narrative works using sequential art.</p>
+                <ul class="item-list" id="novel-list">
+                </ul>
+            </div>
+
+            <div class="card western-comic">
+                <h3>Western Comics</h3>
+                <p>Comics from Western countries with superheroes.</p>
+                <ul class="item-list" id="western-list">
+                </ul>
+            </div>
+        </div>
+
+        <section class="actions">
+            <h2>Manage Your Archive</h2>
+            <div class="btn-group">
+                <button id="add-btn" class="action-btn">Add New Item</button>
+                <button id="edit-btn" class="action-btn edit">Edit Item</button>
+                <button id="save-btn" class="action-btn save">Save Archive to File</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Thank you for using the archive!</p>
+    </footer>
+
+    <script src="mangaArchive.js"></script>
+</body>
+
+</html>
